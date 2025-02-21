@@ -1,53 +1,29 @@
-# TechAI Assistant
+# Databutton app
 
-An AI-powered computer diagnostics and solutions platform built with Databutton.
+This project consists of a FastAPI backend server and a React + TypeScript frontend application exported from Databutton.
 
-## Features
+## Stack
 
-- 🔍 System Performance Analysis
-- 🛡️ Security Analysis
-- 💻 Hardware Diagnostics
-- ⚡ Quick Resolution
+- React+Typescript frontend with `yarn` as package manager.
+- Python FastAPI server with `uv` as package manager.
 
-## Tech Stack
+## Quickstart
 
-### Frontend
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Shadcn UI Components
+1. Install dependencies:
 
-### Backend
-- FastAPI
-- Python
-- DeepSeek AI
-- psutil
-
-## Project Structure
-├── src/                    # Backend code
-│   ├── app/
-│   │   └── apis/          # API endpoints
-│   └── requirements.txt    # Python dependencies
-├── ui/                     # Frontend code
-│   ├── src/
-│   │   ├── pages/         # React pages
-│   │   ├── components/    # React components
-│   │   └── utils/         # Utility functions
-│   └── package.json       # Node dependencies
-
-
-## Setup
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- Python (3.8 or higher)
-- DeepSeek API key
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/techai-assistant.git
-cd techai-assistant
+make
+```
+
+2. Start the backend and frontend servers in separate terminals:
+
+```bash
+make run-backend
+make run-frontend
+```
+
+## Gotchas
+
+The backend server runs on port 8000 and the frontend development server runs on port 5173. The frontend Vite server proxies API requests to the backend on port 8000.
+
+Visit <http://localhost:5173> to view the application.
